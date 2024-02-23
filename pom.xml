@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.melon</groupId>
+    <artifactId>muxi-generator</artifactId>
+    <version>3.0.3</version>
+    <packaging>pom</packaging>
+
+    <name>muxi-generator</name>
+    <description>muxi generator</description>
+    <url>https://github.com/makunet/maku-generator</url>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.4</version>
+    </parent>
+
+    <modules>
+        <module>muxi-generator-core</module>
+        <module>muxi-generator-boot-starter</module>
+        <module>muxi-generator-server</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>17</java.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>阿里云公共仓库</name>
+            <url>https://maven.aliyun.com/repository/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>public</id>
+            <name>阿里云公共仓库</name>
+            <url>https://maven.aliyun.com/repository/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <developers>
+        <developer>
+            <name>muxi</name>
+            <email>melon_1010@163.com</email>
+            <organization>MUXI</organization>
+            <organizationUrl>https://wei.sale</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>https://github.com/makunet/maku-generator.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:makunet/maku-generator.git</developerConnection>
+        <url>https://github.com/makunet/maku-generator</url>
+    </scm>
+</project>

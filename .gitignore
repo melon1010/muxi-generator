@@ -1,0 +1,4 @@
+# Project exclude paths
+/muxi-generator-boot-starter/target/
+/muxi-generator-core/target/
+/muxi-generator-server/target/
